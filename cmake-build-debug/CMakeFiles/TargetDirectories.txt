@@ -1,0 +1,3 @@
+/home/rafkat/CLionProjects/odeCalculations/cmake-build-debug/CMakeFiles/odeCalculations.dir
+/home/rafkat/CLionProjects/odeCalculations/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rafkat/CLionProjects/odeCalculations/cmake-build-debug/CMakeFiles/rebuild_cache.dir
