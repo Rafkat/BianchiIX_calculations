@@ -13,13 +13,15 @@
 inline void write_reverse_anisotropic(Output &out, ofstream &file) {
     for (Int i = out.count - 1; i > 0; i--)
         file << out.xsave[i] << " " << out.ysave[0][i]
-             << " " << out.ysave[1][i] << " " << out.ysave[2][i] << " " << out.ysave[3][i] << endl;
+             << " " << out.ysave[1][i] << " " << out.ysave[2][i] << " " << out.ysave[3][i]
+             << " " << out.ysave[4][i] << " " << out.ysave[5][i] << " " << out.ysave[6][i] << endl;
 }
 
 inline void write_anisotropic(Output &out, ofstream &file) {
     for (Int i = 0; i < out.count; i++)
         file << out.xsave[i] << " " << out.ysave[0][i]
-             << " " << out.ysave[1][i] << " " << out.ysave[2][i] << " " << out.ysave[3][i] << endl;
+                << " " << out.ysave[1][i] << " " << out.ysave[2][i] << " " << out.ysave[3][i]
+                << " " << out.ysave[4][i] << " " << out.ysave[5][i] << " " << out.ysave[6][i] << endl;
 }
 
 inline void write_reverse_isotropic(Output &out, ofstream &file) {

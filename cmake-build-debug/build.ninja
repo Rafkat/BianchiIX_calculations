@@ -61,6 +61,24 @@ build CMakeFiles/odeCalculations.dir/bianchiIX/bianchiIX_anisotropy.cpp.o: CXX_C
   OBJECT_DIR = CMakeFiles/odeCalculations.dir
   OBJECT_FILE_DIR = CMakeFiles/odeCalculations.dir/bianchiIX
 
+build CMakeFiles/odeCalculations.dir/bianchiIX/bianchiIX_isotropy.cpp.o: CXX_COMPILER__odeCalculations_unscanned_Debug /home/rafkat/CLionProjects/odeCalculations/bianchiIX/bianchiIX_isotropy.cpp || cmake_object_order_depends_target_odeCalculations
+  DEP_FILE = CMakeFiles/odeCalculations.dir/bianchiIX/bianchiIX_isotropy.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/odeCalculations.dir
+  OBJECT_FILE_DIR = CMakeFiles/odeCalculations.dir/bianchiIX
+
+build CMakeFiles/odeCalculations.dir/bianchiV/bianchiV_isotropy.cpp.o: CXX_COMPILER__odeCalculations_unscanned_Debug /home/rafkat/CLionProjects/odeCalculations/bianchiV/bianchiV_isotropy.cpp || cmake_object_order_depends_target_odeCalculations
+  DEP_FILE = CMakeFiles/odeCalculations.dir/bianchiV/bianchiV_isotropy.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/odeCalculations.dir
+  OBJECT_FILE_DIR = CMakeFiles/odeCalculations.dir/bianchiV
+
+build CMakeFiles/odeCalculations.dir/bianchiV/bianchiV_anisotropy.cpp.o: CXX_COMPILER__odeCalculations_unscanned_Debug /home/rafkat/CLionProjects/odeCalculations/bianchiV/bianchiV_anisotropy.cpp || cmake_object_order_depends_target_odeCalculations
+  DEP_FILE = CMakeFiles/odeCalculations.dir/bianchiV/bianchiV_anisotropy.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/odeCalculations.dir
+  OBJECT_FILE_DIR = CMakeFiles/odeCalculations.dir/bianchiV
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target odeCalculations
@@ -69,7 +87,7 @@ build CMakeFiles/odeCalculations.dir/bianchiIX/bianchiIX_anisotropy.cpp.o: CXX_C
 #############################################
 # Link the executable odeCalculations
 
-build odeCalculations: CXX_EXECUTABLE_LINKER__odeCalculations_Debug CMakeFiles/odeCalculations.dir/main.cpp.o CMakeFiles/odeCalculations.dir/bianchiIX/bianchiIX_anisotropy.cpp.o
+build odeCalculations: CXX_EXECUTABLE_LINKER__odeCalculations_Debug CMakeFiles/odeCalculations.dir/main.cpp.o CMakeFiles/odeCalculations.dir/bianchiIX/bianchiIX_anisotropy.cpp.o CMakeFiles/odeCalculations.dir/bianchiIX/bianchiIX_isotropy.cpp.o CMakeFiles/odeCalculations.dir/bianchiV/bianchiV_isotropy.cpp.o CMakeFiles/odeCalculations.dir/bianchiV/bianchiV_anisotropy.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/odeCalculations.dir
   POST_BUILD = :

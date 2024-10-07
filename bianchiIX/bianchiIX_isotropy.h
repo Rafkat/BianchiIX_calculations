@@ -197,6 +197,6 @@ struct bianchiIX_rhs {
 
 };
 
-void get_bianchiIX_isotropy_points();
+void get_bianchiIX_isotropy_points(int);
 
 #endif //ODECALCULATIONS_BIANCHIIX_ISOTROPY_H
