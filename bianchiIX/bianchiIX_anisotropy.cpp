@@ -18,10 +18,10 @@ void get_bianchiIX_anisotropy_points(int n_points) {
     bIX_anisotropic_down::ystart[0] = BIX_anisotropic_initial_conditions::a_iv;
     bIX_anisotropic_down::ystart[1] = -BIX_anisotropic_initial_conditions::da_iv;
     bIX_anisotropic_down::ystart[2] = BIX_anisotropic_initial_conditions::phi_iv;
-    bIX_anisotropic_down::ystart[3] = -BIX_anisotropic_initial_conditions::dbp_iv;
-    bIX_anisotropic_down::ystart[4] = -BIX_anisotropic_initial_conditions::dbm_iv;
-    bIX_anisotropic_down::ystart[5] = -BIX_anisotropic_initial_conditions::bp_iv;
-    bIX_anisotropic_down::ystart[6] = -BIX_anisotropic_initial_conditions::bm_iv;
+    bIX_anisotropic_down::ystart[3] = BIX_anisotropic_initial_conditions::dbp_iv;
+    bIX_anisotropic_down::ystart[4] = BIX_anisotropic_initial_conditions::dbm_iv;
+    bIX_anisotropic_down::ystart[5] = BIX_anisotropic_initial_conditions::bp_iv;
+    bIX_anisotropic_down::ystart[6] = BIX_anisotropic_initial_conditions::bm_iv;
 
     bianchiIX_anisotropic_rhs d(BIX_anisotropic_initial_conditions::eta, BIX_anisotropic_initial_conditions::omega_2);
 
@@ -46,12 +46,16 @@ void get_bianchiIX_anisotropy_points(int n_points) {
             + "_omega_2_" + std::to_string(BIX_anisotropic_initial_conditions::omega_2)
             + "_dbp_" + std::to_string(BIX_anisotropic_initial_conditions::dbp_iv)
             + "_dbm_" + std::to_string(BIX_anisotropic_initial_conditions::dbm_iv)
+            + "_bp_" + std::to_string(BIX_anisotropic_initial_conditions::bp_iv)
+            + "_bm_" + std::to_string(BIX_anisotropic_initial_conditions::bm_iv)
             + "_" + std::to_string(n_points) + "p_upside.txt");
     bianchiIX_downside.open(
             "../output/bianchiIX_anisotropic_eta_" + std::to_string(BIX_anisotropic_initial_conditions::eta)
             + "_omega_2_" + std::to_string(BIX_anisotropic_initial_conditions::omega_2)
             + "_dbp_" + std::to_string(BIX_anisotropic_initial_conditions::dbp_iv)
             + "_dbm_" + std::to_string(BIX_anisotropic_initial_conditions::dbm_iv)
+            + "_bp_" + std::to_string(BIX_anisotropic_initial_conditions::bp_iv)
+            + "_bm_" + std::to_string(BIX_anisotropic_initial_conditions::bm_iv)
             + "_" + std::to_string(n_points) + "p_downside.txt");
 
     for (std::size_t i{0}; i < ip.size(); i++) {
