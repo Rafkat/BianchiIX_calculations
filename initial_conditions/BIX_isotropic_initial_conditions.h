@@ -30,7 +30,7 @@ namespace BIX_ode_parameters {
 }
 
 namespace BIX_isotropic_up {
-    const Doub x2_bw{-3.4};
+    const Doub x2_bw{-3.2878};
     const Doub x2_fw{22.4};
     VecDoub ystart(BIX_ode_parameters::isotropic_nvar);
 }

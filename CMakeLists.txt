@@ -13,17 +13,17 @@ add_executable(odeCalculations main.cpp
         nr/ludcmp.h
         nr/stepperbs.h
         constants.h
-        bianchiIX/bianchiIX_anisotropy.h
         bianchiIX/bianchiIX_isotropy.h
-        bianchiIX/bianchiIX_anisotropy.cpp
         bianchiIX/bianchiIX_isotropy.cpp
-        output/output_writer.h
-        initial_conditions/BIX_anisotropic_initial_conditions.h
+        bianchiIX/bianchiIX_anisotropy.h
+        bianchiIX/bianchiIX_anisotropy.cpp
         initial_conditions/BIX_isotropic_initial_conditions.h
-        bianchiV/bianchiV_isotropy.cpp
+        initial_conditions/BIX_anisotropic_initial_conditions.h
+        output/output_writer.h
         bianchiV/bianchiV_isotropy.h
-        initial_conditions/BV_isotropic_initial_conditions.h
+        bianchiV/bianchiV_isotropy.cpp
         bianchiV/bianchiV_anisotropy.h
         bianchiV/bianchiV_anisotropy.cpp
+        initial_conditions/BV_isotropic_initial_conditions.h
         initial_conditions/BV_anisotropic_initial_conditions.h
 )

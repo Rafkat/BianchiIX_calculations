@@ -12,7 +12,7 @@ namespace BIX_anisotropic_initial_conditions {
     Doub a_iv = 1.0;
     Doub da_iv = 1.0;
     Doub omega_2 = 1.0e-5;
-    Doub eta = 18.0 * 1.0e-3;
+    Doub eta = 72.0 * 1.0e-3;
     Doub dbp_iv = 1.0e-7;
     Doub dbm_iv = 1.0e-7;
     Doub bp_iv = 0.0;
@@ -43,7 +43,7 @@ namespace BIX_ode_parameters {
 }
 
 namespace bIX_anisotropic_up {
-    const Doub x2_bw{-3.421218299};
+    const Doub x2_bw{-6.421218299};
     const Doub x2_fw{19.78369293};
     VecDoub ystart(BIX_ode_parameters::anisotropic_nvar);
 }

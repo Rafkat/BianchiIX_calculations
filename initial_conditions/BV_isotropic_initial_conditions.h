@@ -30,7 +30,7 @@ namespace BV_ode_parameters {
 }
 
 namespace BV_isotropic_up {
-    const Doub x2_bw{-3.28};
+    const Doub x2_bw{-3.2878};
     const Doub x2_fw{22.4};
     VecDoub ystart(BV_ode_parameters::isotropic_nvar);
 }

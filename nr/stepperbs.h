@@ -293,10 +293,10 @@ void StepperBS<D>::step(const Doub htry, D &derivs) {
         firstk = false;
         reject = false;
         if (abs(h) <= abs(x) * EPS) {
-            std::cout << h << '\n';
-            std::cout << x << '\n';
-            std::cout << EPS << '\n';
-            std::cout << abs(x) * EPS << '\n';
+            std::cout << "h: " << h << '\n';
+            std::cout << "x: " << x << '\n';
+            std::cout << "EPS: " << EPS << '\n';
+            std::cout << "abs(x) * EPS: " << abs(x) * EPS << '\n';
             std::cout << (abs(h) <= abs(x) * EPS) << '\n';
             throw("step size underflow in StepperBS");
         }

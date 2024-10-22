@@ -50,10 +50,10 @@
 			"sourceIndexes" : 
 			[
 				0,
-				12,
+				11,
 				13,
-				17,
-				21
+				18,
+				20
 			]
 		}
 	],
@@ -87,10 +87,10 @@
 			"sourceIndexes" : 
 			[
 				0,
-				12,
+				11,
 				13,
-				17,
-				21
+				18,
+				20
 			]
 		},
 		{
@@ -107,13 +107,13 @@
 				8,
 				9,
 				10,
-				11,
+				12,
 				14,
 				15,
 				16,
-				18,
+				17,
 				19,
-				20,
+				21,
 				22
 			]
 		}
@@ -173,12 +173,18 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "bianchiIX/bianchiIX_anisotropy.h",
+			"path" : "bianchiIX/bianchiIX_isotropy.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "bianchiIX/bianchiIX_isotropy.h",
+			"compileGroupIndex" : 0,
+			"path" : "bianchiIX/bianchiIX_isotropy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "bianchiIX/bianchiIX_anisotropy.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -189,13 +195,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "bianchiIX/bianchiIX_isotropy.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "output/output_writer.h",
+			"path" : "initial_conditions/BIX_isotropic_initial_conditions.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -205,14 +205,8 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "initial_conditions/BIX_isotropic_initial_conditions.h",
+			"path" : "output/output_writer.h",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "bianchiV/bianchiV_isotropy.cpp",
-			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
@@ -221,8 +215,9 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "initial_conditions/BV_isotropic_initial_conditions.h",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "bianchiV/bianchiV_isotropy.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
@@ -234,6 +229,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "bianchiV/bianchiV_anisotropy.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "initial_conditions/BV_isotropic_initial_conditions.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,

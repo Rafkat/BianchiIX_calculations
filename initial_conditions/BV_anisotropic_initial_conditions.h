@@ -13,7 +13,7 @@ namespace BV_anisotropic_initial_conditions {
     Doub da_iv = 1.0;
     Doub omega_2 = 1.0e-5;
     Doub eta = 18.0 * 1.0e-3;
-    Doub s_iv = 0.78;
+    Doub s_iv = 1.414213562 * 1.0e-7;
 
     Doub phi_iv =
             0.5 * std::log(3.0 / 4.0 / Pi * (da_iv * da_iv / a_iv / a_iv - s_iv * s_iv - omega_2 / a_iv / a_iv) /
@@ -31,7 +31,7 @@ namespace BV_ode_parameters {
 }
 
 namespace BV_anisotropic_up {
-    const Doub x2_bw{-3.1};
+    const Doub x2_bw{-3.2896};
     const Doub x2_fw{22.4};
     VecDoub ystart(BV_ode_parameters::anisotropic_nvar);
 }

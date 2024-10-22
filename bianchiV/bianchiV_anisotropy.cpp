@@ -13,7 +13,7 @@ void get_bianchiV_anisotropy_points(int n_points) {
     BV_anisotropic_down::ystart[0] = BV_anisotropic_initial_conditions::a_iv;
     BV_anisotropic_down::ystart[1] = -BV_anisotropic_initial_conditions::da_iv;
     BV_anisotropic_down::ystart[2] = BV_anisotropic_initial_conditions::phi_iv;
-    BV_anisotropic_down::ystart[3] = -BV_anisotropic_initial_conditions::s_iv;
+    BV_anisotropic_down::ystart[3] = BV_anisotropic_initial_conditions::s_iv;
 
     bianchiV_anisotropic_rhs d(BV_anisotropic_initial_conditions::eta, BV_anisotropic_initial_conditions::omega_2);
 
