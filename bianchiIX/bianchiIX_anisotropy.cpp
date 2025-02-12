@@ -23,7 +23,10 @@ void get_bianchiIX_anisotropy_points(int n_points) {
     bIX_anisotropic_down::ystart[5] = BIX_anisotropic_initial_conditions::bp_iv;
     bIX_anisotropic_down::ystart[6] = BIX_anisotropic_initial_conditions::bm_iv;
 
-    bianchiIX_anisotropic_rhs d(BIX_anisotropic_initial_conditions::eta, BIX_anisotropic_initial_conditions::omega_2);
+    bianchiIX_anisotropic_rhs d(BIX_anisotropic_initial_conditions::eta,
+                                BIX_anisotropic_initial_conditions::omega_2,
+                                BIX_anisotropic_initial_conditions::omega_4,
+                                BIX_anisotropic_initial_conditions::omega_0);
 
     std::vector<std::vector<Doub>> ip{{BIX_ode_parameters::x1, bIX_anisotropic_up::x2_bw},
                                       {BIX_ode_parameters::x1, bIX_anisotropic_up::x2_fw},
@@ -44,6 +47,9 @@ void get_bianchiIX_anisotropy_points(int n_points) {
     bianchiIX_upside.open(
             "../output/bianchiIX_anisotropic_eta_" + std::to_string(BIX_anisotropic_initial_conditions::eta)
             + "_omega_2_" + std::to_string(BIX_anisotropic_initial_conditions::omega_2)
+            + "_omega_0_" + std::to_string(BIX_anisotropic_initial_conditions::omega_0)
+            + "_omega_3_" + std::to_string(BIX_anisotropic_initial_conditions::omega_3)
+            + "_omega_4_" + std::to_string(BIX_anisotropic_initial_conditions::omega_4)
             + "_dbp_" + std::to_string(BIX_anisotropic_initial_conditions::dbp_iv)
             + "_dbm_" + std::to_string(BIX_anisotropic_initial_conditions::dbm_iv)
             + "_bp_" + std::to_string(BIX_anisotropic_initial_conditions::bp_iv)
@@ -52,6 +58,9 @@ void get_bianchiIX_anisotropy_points(int n_points) {
     bianchiIX_downside.open(
             "../output/bianchiIX_anisotropic_eta_" + std::to_string(BIX_anisotropic_initial_conditions::eta)
             + "_omega_2_" + std::to_string(BIX_anisotropic_initial_conditions::omega_2)
+            + "_omega_0_" + std::to_string(BIX_anisotropic_initial_conditions::omega_0)
+            + "_omega_3_" + std::to_string(BIX_anisotropic_initial_conditions::omega_3)
+            + "_omega_4_" + std::to_string(BIX_anisotropic_initial_conditions::omega_4)
             + "_dbp_" + std::to_string(BIX_anisotropic_initial_conditions::dbp_iv)
             + "_dbm_" + std::to_string(BIX_anisotropic_initial_conditions::dbm_iv)
             + "_bp_" + std::to_string(BIX_anisotropic_initial_conditions::bp_iv)

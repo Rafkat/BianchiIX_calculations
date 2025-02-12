@@ -12,6 +12,9 @@ namespace BIX_anisotropic_initial_conditions {
     Doub a_iv = 1.0;
     Doub da_iv = 1.0;
     Doub omega_2 = 1.0e-5;
+    Doub omega_0 = 0.01;
+    Doub omega_3 = 1e-3;
+    Doub omega_4 = 1e-3;
     Doub eta = 72.0 * 1.0e-3;
     Doub dbp_iv = 1.0e-7;
     Doub dbm_iv = 1.0e-7;
@@ -26,7 +29,7 @@ namespace BIX_anisotropic_initial_conditions {
 
     Doub phi_iv =
             0.5 * std::log(3.0 / 4.0 / Pi *
-                           (da_iv * da_iv / a_iv / a_iv - dbp_iv * dbp_iv - dbm_iv * dbm_iv + omega_2 * KIX / a_iv / a_iv) /
+                                   ((da_iv * da_iv / a_iv / a_iv - dbp_iv * dbp_iv - dbm_iv * dbm_iv + omega_2 * KIX / a_iv / a_iv) - omega_4 - omega_0 - omega_3) /
                            (1.0 - 3.0 * eta *
                                   (3.0 * da_iv * da_iv / a_iv / a_iv - 3.0 * dbp_iv * dbp_iv - 3.0 * dbm_iv * dbm_iv +
                                    omega_2 * KIX/ a_iv / a_iv)));
